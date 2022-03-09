@@ -19,7 +19,8 @@
 # GNU General Public License for more details.
 #
 #############################################################################
-# %module
+
+# %Module
 # % description: Computes the current region extent or the size of the map in square meters and compares it with the user defined maximum.
 # % keyword: general
 # % keyword: area
@@ -70,7 +71,7 @@ def main():
     global rm_vectors
 
     # test overlap
-    grass.message("Create vector map out of current region ...")
+    grass.message(_("Create vector map out of current region..."))
     tmpvector = "tmp_regionvector_%s" % "".join(
         random.choice(string.ascii_letters) for i in range(5)
     )
@@ -80,7 +81,7 @@ def main():
     else:
         grass.run_command("g.copy", vector="%s,%s" % (options["map"], tmpvector))
 
-    grass.message("Computing area of current region in sqm ...")
+    grass.message(_("Computing area of current region in sqm..."))
     if len(grass.vector_db(tmpvector)) == 0:
         grass.run_command("v.db.addtable", map=tmpvector, quiet=True)
     grass.run_command(
@@ -100,7 +101,7 @@ def main():
         overwrite=True,
     )
 
-    grass.message("Select area ...")
+    grass.message(_("Select area..."))
     area_sqm = float(
         [
             x
