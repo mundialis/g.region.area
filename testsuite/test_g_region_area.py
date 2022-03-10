@@ -1,19 +1,24 @@
-"""
-Name:       g.region.area test
-Purpose:    Tests g.region.area inputs.
-            Uses NC full sample data set.
-Author:     Anika Weinmann and Guido Riembauer
-Copyright:  (C) 2020-2022 by mundialis GmbH & Co. KG and the GRASS Development Team
-License:    This program is free software; you can redistribute it and/or modify
-            it under the terms of the GNU General Public License as published by
-            the Free Software Foundation; either version 2 of the License, or
-            (at your option) any later version.
+#!/usr/bin/env python3
 
-            This program is distributed in the hope that it will be useful,
-            but WITHOUT ANY WARRANTY; without even the implied warranty of
-            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-            GNU General Public License for more details.
-"""
+############################################################################
+#
+# MODULE:      g.region.area test
+# AUTHOR(S):   Anika Weinmann and Guido Riembauer
+#
+# PURPOSE:     Tests g.region.area inputs. Uses NC full sample data set.
+# COPYRIGHT:   (C) 2020-2022 by mundialis GmbH & Co. KG and the GRASS Development Team
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+#############################################################################
 
 import os
 
